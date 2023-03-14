@@ -48,9 +48,6 @@ function getResult(playerChoice, computerChoice) {
 
 // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
 function showResult(score, playerChoice, computerChoice) {
-  // Hint: on a score of -1
-  // You should do result.innerText = 'You Lose!'
-  // Don't forget to grab the div with the 'result' id!
   const resultDiv=document.getElementById('result')
   const handsDiv=document.getElementById('hands')
   const playerScoreDiv=document.getElementById('player-score')
@@ -79,7 +76,7 @@ function onClickRPS(playerChoice) {
 }
 
 
-// ** Make the RPS buttons actively listen for a click and do something once a click is detected **
+
 function playGame() {
   
 const rpsButtons=document.querySelectorAll('.rpsButton')
